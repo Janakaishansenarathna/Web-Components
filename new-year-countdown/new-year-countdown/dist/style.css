@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Fleur De Leah", cursive;
+}
+body {
+	height: 100%;
+	background: #f2f2f2;
+	display: flex;
+	justify-content: center;
+}
+.text-content {
+	color: #d9376e;
+	font-size: 3rem;
+	text-align: center;
+	margin: 2rem;
+	padding: 1rem;
+}
+
+.new-year {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.counter-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.counter-container div {
+	margin: 2rem;
+	padding: 1rem;
+}
+.counter-container #day,
+.counter-container #hour,
+.counter-container #min,
+.counter-container #sec {
+	height: 150px;
+	width: 150px;
+	background: #f2f2f2;
+	border-radius: 11px;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 900;
+
+	box-shadow: inset 0 0 15px rgba(66, 66, 66, 0),
+		inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(58, 58, 58, 0.15),
+		-7px -7px 20px white, inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+	transition: box-shadow 399ms ease-in-out;
+}
+
+.counter-container #day:hover,
+.counter-container #hour:hover,
+.counter-container #min:hover,
+.counter-container #sec:hover {
+	box-shadow: inset 7px 7px 15px rgba(66, 66, 66, 0.15),
+		inset -7px -7px 20px white, 0px 0px 4px rgba(255, 255, 255, 0.2);
+}
+
+.counter-container #day,
+.counter-container #d {
+	color: #d9376e;
+}
+.counter-container #hour,
+.counter-container #h {
+	color: #004643;
+}
+.counter-container #min,
+.counter-container #m {
+	color: #ff6e6c;
+}
+.counter-container #sec,
+.counter-container #s {
+	color: #6246ea;
+}
+.counter-container #d,
+.counter-container #h,
+.counter-container #m,
+.counter-container #s {
+	font-size: 1.5rem;
+}
+
+.time-until {
+	text-align: center;
+	color: #8bd3dd;
+	font-size: 2rem;
+	margin: 2rem;
+	padding: 1rem;
+}
+
+.main-content {
+	opacity: 1;
+	transition: opacity 1s;
+}
+.main-content.fade {
+	opacity: 0;
+}
+.happy-new-year {
+	font-size: 4rem;
+	text-align: center;
+	color: #f582ae;
+	display: none;
+}
+
+span {
+	color: #8bd3dd;
+}
+span a {
+	text-decoration: none;
+	color: #8bd3dd;
+}
